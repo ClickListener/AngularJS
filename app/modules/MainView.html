@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My AngularJS App</title>
+
+    <link rel="stylesheet" href="../css/app.css"/>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+
+    <script src="../lib/angular/angular.min.js"></script>
+    <script src="../lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../lib/angular-animate/angular-animate.js"></script>
+    <style type="text/css" href="../../../css/animate.css">
+
+    </style>
+</head>
+<body>
+
+
+<!--<div class="navbar-header">-->
+    <!--<button class="navbar-toggle" type="button" ng-click="vm.isCollapsed = !vm.isCollapsed">-->
+        <!--<span class="sr-only">Toggle navigation</span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+    <!--</button>-->
+    <!--<a ui-sref="home" class="navbar-brand">MEAN.JS</a>-->
+<!--</div>-->
+
+<header class="nav nav-pills navbar-inverse">
+    <div class="container">
+        <nav role="navigation" class="collapse navbar-collapse ">
+            <ul class="nav navbar-nav">
+                <li ui-sref-active="active">
+                    <a href ui-sref="home" class="navbar-brand">iHealth</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a href ui-sref="about">About</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li ui-sref-active="active">
+                    <a href ui-sref="signIn">SignIn</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a href ui-sref="signUp">SignOut</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+<div class="container">
+    <div ui-view></div>
+</div>
+
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.modules"></script>
+-->
+
+
+<script src="app.js"></script>
+<script src="Main/main.client.module.js"></script>
+<script src="User/user.client.module.js"></script>
+<script src="User/controllers/user.signIn.controller.js"></script>
+<script src="User/controllers/user.signUp.controller.js"></script>
+<!--<script src="../services/services.js"></script>-->
+<!--<script src="../controllers/myCtrl1.client.controllers.js"></script>-->
+<!--<script src="../controllers/myCtrl2.client.controller.js"></script>-->
+<!--<script src="../filters/filters.js"></script>-->
+<!--<script src="../directives/directives.js"></script>-->
+</body>
+</html>
